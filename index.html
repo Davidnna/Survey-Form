@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Jacquard+12&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <title>Survey Form</title>
+    </head>
+    <body>
+        <header>
+            <h1 id="title">My Certification Project on freeCodeCamp<br>Survey Form</h1>
+            <p id="description">This is my first time using an online platrform in this way and I am happy I chose this one.<br>I hope my project is good.<br>Thanks</p>
+        </header>
+        <main>
+            <form id="survey-form">
+                <label for="name" id="name-label">Full Name:</label>
+                <input type="text" name="name" id="name" placeholder="Enter Your Full Name Here eg. John Luke Stone Edward B."required>
+                
+                <label for="email" id="email-label">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Enter Your Email Here eg. example@email.domain" required>
+                
+                <label for="experience" id="number-label">Experience:</label>
+                <input type="number" name="experience" id="number" min="0" max="100" placeholder="Enter Your Number of Years of Experience Here eg. 2" required>
+
+                <label>Status in Tech:</label>
+                <input type="radio" id="begginer" name="status" value="begginer" class="check">
+                <label for="begginer" class="label">Begginer</label><br>
+
+                <input type="radio" id="intermidiate" name="status" value="intermidiate" class="check">
+                <label for="intermidiate" class="label">Intermidiate</label><br>
+
+                <input type="radio" id="expert" name="status" value="expert" class="check">
+                <label for="expert" class="label">Expert</label><br>
+
+                <input type="radio" id="pro" name="status" value="pro" class="check">
+                <label for="pro" class="label">Pro</label>
+
+                <label>Hours you Work:</label>
+                <select id="dropdown" name="hours" required>
+                    <option value="" selected disabled>Select Hours You Work</option>
+                    <option value="less2">Less Than 2 Hours a Week</option>
+                    <option value="less4">Less Than 4 Hours a Week</option>
+                    <option value="less6">Less Than 6 Hours a Week</option>
+                    <option value="less8">Less Than 8 Hours a Week</option>
+                    <option value="less10">Less Than 10 Hours a Week</option>
+                    <option value="less12">Less Than 12 Hours a Week</option>
+                    <option value="more12">More Than 12 Hours a Week</option>
+                </select>
+
+                <label>Tech Skills You Know:</label>
+                <input type="checkbox" id="graphicDesign" name="skills" value="graphicDesign" class="check">
+                <label for="graphicDesign" class="label">Graphic Design</label><br>
+
+                <input type="checkbox" id="webDevelopment" name="skills" value="webDevelopment" class="check">
+                <label for="webDevelopment" class="label">Web Development</label><br>
+
+                <input type="checkbox" id="dataSceince" name="skills" value="dataSceince" class="check">
+                <label for="dataSceince" class="label">Data Sceince</label><br>
+
+                <input type="checkbox" id="dataAnalytics" name="skills" value="dataAnalytics" class="check">
+                <label for="dataAnalytics" class="label">Data Analytics</label><br>
+
+                <input type="checkbox" id="fullStackDevelopment" name="skills" value="fullStackDevelopment" class="check">
+                <label for="fullStackDevelopment" class="label">Full Stack Development</label><br>
+
+                <input type="checkbox" id="frontEndDevelopment" name="skills" value="frontEndDevelopment" class="check">
+                <label for="frontEndDevelopment" class="label">Front End Development</label><br>
+
+                <input type="checkbox" id="backEndDevelopment" name="skills" value="backEndDevelopment" class="check">
+                <label for="backEndDevelopment" class="label">Back End Development</label><br>
+
+                <input type="checkbox" id="mobileAppDevelopment" name="skills" value="mobileAppDevelopment" class="check">
+                <label for="mobileAppDevelopment" class="label">Mobile App Development</label><br>
+
+                <input type="checkbox" id="embeddedSystems" name="skills" value="embeddedSystems" class="check">
+                <label for="embeddedSystems" class="label">Embedded Systems</label><br>
+
+                <input type="checkbox" id="productDesign" name="skills" value="productDesign" class="check">
+                <label for="productDesign" class="label">Product Design</label><br>
+                
+                <input type="checkbox" id="machineLearning" name="skills" value="machineLearning" class="check">
+                <label for="machineLearning" class="label">Machine Learning</label><br>
+
+                <input type="checkbox" id="AI_Engineering" name="skills" value="AI_Engineering" class="check">
+                <label for="AI_Engineering" class="label">AI Engineering</label><br>
+
+                <input type="checkbox" id="softwareEngineering" name="skills" value="softwareEngineering" class="check">
+                <label for="softwareEngineering" class="label">Software Engineering</label><br>
+
+                <input type="checkbox" id="projectManagement" name="skills" value="projectManagement" class="check">
+                <label for="projectManagement" class="label">Project Management</label><br>
+
+                <input type="checkbox" id="virtualAssistant" name="skills" value="virtualAssistant" class="check">
+                <label for="virtualAssistant" class="label">Virtual Assistant</label>
+
+                <label for="address">Address:</label>
+                <textarea name="address" id="address" placeholder="Enter Your Address Here" required></textarea>
+
+                <button type="submit" id="submit">Submit Your Details</button>
+            </form>
+        </main>
+    </body>
+</html>
