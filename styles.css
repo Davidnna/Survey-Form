@@ -12,17 +12,23 @@ body {
 header {
     background-color: #52331c85;
     text-align: center;
-    padding: 1em;
+    padding: 0.9em;
 }
 
 h1 {
     font-size: xx-large;
     color: #ffffff8e;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 p {
     font-size: x-large;
     color: #ffffffcb;
+}
+
+main {
+    padding: 0 1em;
 }
 
 form {
@@ -70,6 +76,7 @@ button:hover {
 
 #submit {
     width: 50%;
-    display: block;
+    display: flex;
+    justify-content: center;
     margin: auto;
 }
