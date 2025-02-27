@@ -6,26 +6,34 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Jacquard+12&display=swap" rel="stylesheet">
-        <link rel="icon" type="image/png" href="favicon.png">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/jpg" href="images/survey.jpg">
+        <!-- <link rel="icon" type="image/jpg" href="https://i.postimg.cc/BQ74kLsg/survey.jpg"> -->
+        <link rel="stylesheet" href="styles/styles.css">
         <title>Survey Form</title>
     </head>
     <body>
+        <!-- Header -->
         <header>
             <h1 id="title">My Certification Project on freeCodeCamp<br>Survey Form</h1>
             <p id="description">This is my first time using an online platform in this way and I am happy I chose this one.<br>I hope my project is good.<br>Thanks</p>
         </header>
+        <!-- Main -->
         <main>
+            <!-- Form -->
             <form id="survey-form">
+                <!-- Full Name -->
                 <label for="name" id="name-label">Full Name:</label>
                 <input type="text" name="name" id="name" placeholder="Enter Your Full Name Here eg. John Luke Stone Edward B."required>
                 
+                <!-- Email -->
                 <label for="email" id="email-label">Email:</label>
                 <input type="email" name="email" id="email" placeholder="Enter Your Email Here eg. example@email.domain" required>
                 
+                <!-- Experience -->
                 <label for="experience" id="number-label">Experience:</label>
                 <input type="number" name="experience" id="number" min="0" max="100" placeholder="Enter Your Number of Years of Experience Here eg. 2" required>
 
+                <!-- Status -->
                 <label>Status in Tech:</label>
                 <input type="radio" id="begginer" name="status" value="beginner" class="check">
                 <label for="begginer" class="label">Beginner</label><br>
@@ -39,6 +47,7 @@
                 <input type="radio" id="pro" name="status" value="pro" class="check">
                 <label for="pro" class="label">Pro</label>
 
+                <!-- Hours -->
                 <label for="dropdown">Hours you Work:</label>
                 <select id="dropdown" name="hours" required>
                     <option value="" selected disabled>Select Hours You Work</option>
@@ -51,6 +60,7 @@
                     <option value="more12">More Than 12 Hours a Week</option>
                 </select>
 
+                <!-- Skills -->
                 <label for="skills">Tech Skills You Know:</label>
                 <input type="checkbox" id="graphicDesign" name="skills" value="graphicDesign" class="check">
                 <label for="graphicDesign" class="label">Graphic Design</label><br>
@@ -97,10 +107,12 @@
                 <input type="checkbox" id="virtualAssistant" name="skills" value="virtualAssistant" class="check">
                 <label for="virtualAssistant" class="label">Virtual Assistant</label>
 
+                <!-- Address -->
                 <label for="address">Address:</label>
                 <textarea name="address" id="address" placeholder="Enter Your Address Here" required></textarea>
 
-                <button type="submit" id="submit">Submit Your Details</button>
+                <!-- Submit -->
+                <input type="submit" id="submit" value="Submit Your Details">
             </form>
         </main>
     </body>

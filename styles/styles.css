@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Geist Mono";
+    background-color: chocolate;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #52331c85;
+    text-align: center;
+    padding: 0.9em;
+    color: #ffffff8e;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+header p {
+    font-size: x-large;
+    color: #ffffffcb;
+}
+
+/* Main */
+main {
+    padding: 0 1em;
+}
+
+/* Form */
+#survey-form {
+    background-color: #ffffff8e;
+    max-width: 37.5em;
+    margin: 2em auto;
+    padding: 2em 1.5em;
+    border-radius: 0.5em;
+    box-shadow: 0 0 0.6em #0000008e;
+}
+
+/* Labels */
+#survey-form label {
+    display: block;
+    margin: 1em 0 0.5em;
+    font-weight: bold;
+}
+
+/* Input Fields */
+#survey-form input, #survey-form select, #survey-form textarea {
+    width: 100%;
+    resize: none;
+    padding: 0.5em;
+    border: 0.1em solid #ccc;
+    border-radius: 0.3em;
+}
+
+/* Radio and Checkboxes and their Labels */
+#survey-form input.check, #survey-form label.label {
+    width: 10%;
+    display: inline;
+}
+
+/* Submit */
+#survey-form input#submit {
+    min-width: 10em;
+    width: 50%;
+    display: block;
+    margin: auto;
+    background-color: chocolate;
+    color: white;
+    padding: 0.75em 0.5em;
+    cursor: pointer;
+}
+
+#survey-form input#submit:hover {
+    background-color: #ff6600;
+}
